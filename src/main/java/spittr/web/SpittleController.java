@@ -33,7 +33,7 @@ public class SpittleController {
     public String spittle(
             @PathVariable("spittleId") long spittleId,
             Model model) {
-        model.addAttribute("spittle1", spittleRepository.findOne(spittleId));
+        model.addAttribute("spittle", spittleRepository.findOne(spittleId));
         return "spittle";
     }
 }

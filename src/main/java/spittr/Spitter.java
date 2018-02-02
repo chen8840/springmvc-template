@@ -14,9 +14,11 @@ public class Spitter {
     private String username;
 
     @NotNull
+    @Size(min = 2, max = 10)
     private String password;
 
     @NotNull
+    @Size(min = 2, max = 10, message = "{firstName.size}")
     private String firstName;
 
     @NotNull
@@ -70,6 +72,10 @@ public class Spitter {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getPassword() {
+        return null;
     }
 
     @Override
